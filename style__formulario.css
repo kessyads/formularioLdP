@@ -1,0 +1,59 @@
+.login{
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    background-color: #c6d9ec;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35PX;
+    font-weight: 100;
+    text-decoration: underline;
+    text-align: center;
+}
+.dados__pessoais{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 400px 0px 400px;
+}
+.genero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+.endereco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 400px 0px 400px;
+}
+.curso{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 10px 10px 10px;
+    padding: auto;
+}
+
+.informacoes__curso{
+    border: solid white 5px;
+    margin: 50px 130px 0px 130px;
+    padding: auto;
+
+}
+.modelo__curso{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}

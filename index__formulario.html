@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style__formulario.css">
+</head>
+<header class="login">
+    <label for="usuario">USUÁRIO:</label><br>
+    <input type="text" id="usuario" name="usuario" pattern="@[\w\d]+"><br>
+    <label for="senha">SENHA:</label><br>
+    <input type="password" id="senha" name="senha">
+</header>
+<body class="container">
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <h2 >DADOS PESSOAIS</h2>
+        <section class="dados__pessoais">
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="sobrenome">Sobrenome</label><br>
+            <input type="text" id="sobrenome" name="sobrenome" required><br>
+        </section>
+        <section class="genero">
+            <label for="genero">Gênero:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label><br>
+            <input type="radio" id="nao_falar" name="genero" value="nao_falar">
+            <label for="nao_falar">Prefiro não falar</label><br>
+            <button type="submit">Enviar</button>
+        </section>        
+    <section class="endereco">
+        <label for="endereco">Endereço:</label><br>
+        <input type="text" id="endereco" name="endereco" required><br>
+        <label for="numero">Número:</label><br>
+        <input type="text" id="numero" name="numero" required><br>
+        <label for="complemento">Complemento:</label><br>
+        <input type="text" id="complemento" name="complemento"><br>
+
+        <label for="cidade">Cidade:</label><br>
+        <select id="cidade" name="cidade" required>
+            <option value="">Selecione</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Belo Horizonte">Belo Horizonte</option>
+            <option value="Manaus">Manaus</option>
+            <option value="Goiania">Goiania</option>
+            <option value="Salvador">Salvador</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Recife">Recife</option>
+            <option value="Curitiba">Curitiba</option>
+             <option value="Brasilia">Brasilia</option>
+        </select><br>
+
+        <label for="estado">Estado:</label><br>
+        <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="SP">Sao Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="PR">Parana</option>
+            <option value="GO">Goias</option>
+            <option value="BR">Brasilia</option>
+            <option value="AM">Amazonas</option>
+            <option value="CE">Ceara</option>
+            <option value="PR">Pernambuco</option>
+            <option value="BA">Bahia</option>
+            <option value="MG">Minas Gerais</option>
+        </select><br>
+        <label for="cep">CEP:</label><br>
+        <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" required><br>
+        <button type="submit">Enviar</button>
+    </section>
+<section class="informacoes__curso">
+    <div class="curso">
+        <label for="curso">Curso:</label><br>
+        <input type="checkbox" id="ADS" name="ADS" value="ADS">
+        <label for="ADS">ADS(Analise e Desenvolvimento de Sistemas)</label><br>
+        <input type="checkbox" id="Jogos" name="Jogos" value="Jogos">
+        <label for="Jogos">Jogos</label><br>
+        <input type="checkbox" id="GTI" name="GTI" value="GTI">
+        <label for="GTI">GTI (Gestão de TI)</label><br>
+        <input type="checkbox" id="Banco de Dados" name="Banco de Dados" value="Banco de Dados">
+        <label for="Banco de Dados">Banco de Dados</label><br>
+        <button type="submit">Enviar</button>
+    </div>
+    <div class="modelo__curso">
+        <label for="modelo">Modelo:</label><br>
+        <input type="radio" id="presencial" name="presencial" value="presencial">
+        <label for="presencial">Presencial</label><br>
+        <input type="radio" id="ead" name="ead" value="ead">
+        <label for="ead">EAD</label><br>
+        <input type="radio" id="semi-presencial" name="semi-presencial" value="semi-presencial">
+        <label for="semi-presencial">Semi Presencial</label><br>
+        <button type="submit">Enviar</button>
+    </div>
+    </section>
+    </form>
+</body>
+</html>
